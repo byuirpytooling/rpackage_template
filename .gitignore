@@ -2,3 +2,4 @@
 .RData
 .httr-oauth
 .quarto
+.DS_Store

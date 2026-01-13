@@ -2,7 +2,7 @@
 
 - [usethis](https://usethis.r-lib.org/)
 - [devtools](https://devtools.r-lib.org/)
-- [pkgdown](https://pkgdown.r-lib.org/)
+- [pkgdown](https://pkgdown.r-lib.org/) (requires [pandoc to be installed](https://github.com/jgm/pandoc/releases/tag/3.8.3))
 
 
 ## R Package Structure
@@ -23,3 +23,9 @@ Below are the folders and files that are often found in an R package.
 | **Dev/Config Files** | .github/, .gitignore, .Rbuildignore, _pkgdown.yml, etc. | *(Not included)* | *(Not included)* |
 
 * [R Packages (2e): Package structure and state](https://r-pkgs.org/structure.html)
+
+## Building a package website
+
+1. `devtools::document()` will create the documentation for your exported functions in your `/R` folder files.
+2. `pkgdown::build_site_github_pages()` will create your `/docs` folder that can be used in Github for your Github pages website.
+
